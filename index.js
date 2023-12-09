@@ -34,6 +34,12 @@ function setPos(e)
 
 
 
+
+
+
+
+
+
 /*비디오 재생 to 메인 페이지*/ 
 document.getElementById('videoForWeb').addEventListener('ended', web, false);
 document.getElementById('videoForIphone').addEventListener('ended', mobile, false);
@@ -46,3 +52,32 @@ function mobile(e) {
     location.href = 'main.html';
     // alert("end");
 }
+
+
+
+
+
+
+
+
+
+/* 아이폰 화면 스크롤 X */
+funciton setScreenSize() {
+    let vh = window.innerHeight * 0.01;
+  
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+  
+setScreenSize(); 
+
+
+
+
+height: calc(var(--vh, 1vh) * 100);
+
+
+window.addEventListener('resize', () => setScreenSize());
+
+/* 아이폰 화면 스크롤 X */
+
+
