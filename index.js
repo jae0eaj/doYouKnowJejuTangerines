@@ -66,8 +66,12 @@ function setScreenSize() {
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 setScreenSize();
-window.addEventListener('resize', setScreenSize);
 
+const setVh = () => {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`)
+};
+window.addEventListener('resize', setVh);
+setVh();
 
 
 /* 스크롤 이벤트 자체 제거*/ 
