@@ -84,7 +84,7 @@ html{
 /* 모바일용 동영상 안 보이게 */
 #videoForIphone{
     display: none;
-    height: 100vh;
+    height:calc(var(--vh, 1vh) * 100);
     width: 100vw;
     overflow: hidden;
     position: fixed;
@@ -1144,7 +1144,7 @@ body{
     }
 
 
-    body {
+    body{
         overflow: hidden;
         touch-action: none;
     }
@@ -1175,7 +1175,7 @@ body{
 
     /* 모바일용 동영상 기본세팅 */
     #videoForIphone{
-        height: 100vh;
+        height:calc(var(--vh, 1vh) * 100);
         width: 100vw;
         overflow: hidden;
         position: fixed;
