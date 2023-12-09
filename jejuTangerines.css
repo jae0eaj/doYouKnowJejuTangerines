@@ -1113,15 +1113,16 @@ body{
         font-size: 10px;
     }
 
-    :root {
+
+
+    /* :root {
         --vh: 100%;
     }
      
-     html,
-     body {
+    html,body {
          height: 100vh;
          height: var(--vh);
-    }
+    } */
 
     #cover{
         height: 100%;
