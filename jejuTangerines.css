@@ -449,6 +449,8 @@ body{
     width: 100vw;
     display: flex;
     overflow: hidden;
+    justify-items: center;
+    align-items: center;
 }
 
 .backBtnReal{
