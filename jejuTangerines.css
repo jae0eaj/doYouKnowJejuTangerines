@@ -1115,7 +1115,14 @@ body{
 
 
 
-
+    :root {
+        --vh: 100%;
+    }
+     
+    html,body {
+         height: 100vh;
+         height: var(--vh);
+    }
 
     #cover{
         height: 100%;
@@ -1148,15 +1155,6 @@ body{
     }
 
 
-    body{
-        overflow: hidden;
-        touch-action: none;
-    }
-    body {
-        position: fixed;
-        overflow: hidden;
-        touch-action: none;
-    }
 
 
     /* 아이폰 세로 크기 재조정 */
@@ -1164,6 +1162,17 @@ body{
         height:calc(var(--vh, 1vh) * 100);
         overflow: hidden;
         touch-action: none;
+    }
+
+
+
+    :root {
+        --vh: 100%;
+    }
+     
+    html,body {
+         height: 100vh;
+         height: var(--vh);
     }
 
 
