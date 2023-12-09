@@ -59,7 +59,7 @@ function mobile(e) {
 
 
 
-
+/* 이거 때문에 스크롤 바디에서는 안 먹힘*/ 
 // /* 모바일 세로스크롤 X */ 
 // function setScreenSize() {
 // 	let vh = window.innerHeight * 0.01;
@@ -70,20 +70,20 @@ function mobile(e) {
 
 
 
-/* 스크롤 이벤트 자체 제거*/ 
-disableScroll = () => {
-    document.querySelector('body').addEventListener('touchmove', this.removeEvent, { passive: false });
-    document.querySelector('body').addEventListener('onclick', this.removeEvent, { passive: false });
-    document.querySelector('body').addEventListener('mousewheel', this.removeEvent, { passive: false });
-  }
+// /* 스크롤 이벤트 자체 제거*/ 
+// disableScroll = () => {
+//     document.querySelector('body').addEventListener('touchmove', this.removeEvent, { passive: false });
+//     document.querySelector('body').addEventListener('onclick', this.removeEvent, { passive: false });
+//     document.querySelector('body').addEventListener('mousewheel', this.removeEvent, { passive: false });
+//   }
 
-  removeEvent = e => {
-    e.preventDefault();
-    e.stopPropagation();
-  }
+//   removeEvent = e => {
+//     e.preventDefault();
+//     e.stopPropagation();
+//   }
 
-  enableScroll = () => {
-    document.querySelector('body').removeEventListener('touchmove', this.removeEvent);
-    document.querySelector('body').removeEventListener('onclick', this.removeEvent);
-    document.querySelector('body').removeEventListener('mousewheel', this.removeEvent);
-}
+//   enableScroll = () => {
+//     document.querySelector('body').removeEventListener('touchmove', this.removeEvent);
+//     document.querySelector('body').removeEventListener('onclick', this.removeEvent);
+//     document.querySelector('body').removeEventListener('mousewheel', this.removeEvent);
+// }
