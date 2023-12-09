@@ -27,13 +27,6 @@
 }
 
 
-.viewer {
-    width: 100vw;
-    /* max-width: 580px; */
-    height: 100vh;
-    overflow: hidden;
-    margin: 0 auto;
-}
 
 
 
@@ -103,13 +96,16 @@ html{
     display: flex;
     width: 100vw;
     height: 100vh;
+    
 
     justify-content: center;
     
-
     align-items: flex-end;
 
 }
+
+
+
 
 
 #skip{
@@ -1147,6 +1143,14 @@ body{
         display: none;
     }
 
+
+
+    /* 아이폰 세로 크기 재조정 */
+    #intro{
+        height:calc(var(--vh, 1vh) * 100);
+        overflow: hidden;
+        touch-action: none;
+    }
 
 
 
