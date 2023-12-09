@@ -977,16 +977,18 @@ body{
 
     /* 웹용 상자 이미지 사라지게*/
     #innerCatonBoxForWeb{
-        display: none;
+
     }
     /* 아이패드용 상자 이미지 나오게*/
     #innerCatonBoxForMob{
-        display: block;
+        /* display: block;
         width: 135rem;
         
         position: absolute;
         
-        transform: rotate(90deg);
+        transform: rotate(90deg); */
+
+
         /* transform: scaleY(-1); */
     }
 
