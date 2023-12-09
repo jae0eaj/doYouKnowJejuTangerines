@@ -471,6 +471,9 @@ body{
 
     overflow: hidden;
     z-index: 2;
+
+    justify-items: center;
+    align-items: center;
 }
 
 .backBtnReal:hover{
@@ -495,6 +498,9 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
+
+    justify-items: center;
+    align-items: center;
 }
 
 
@@ -512,6 +518,9 @@ body{
     left: 50%;
     transform: translate(-50%, -55%);
     margin: 0;
+
+    justify-items: center;
+    align-items: center;
 }
 
 .backBtn a{
