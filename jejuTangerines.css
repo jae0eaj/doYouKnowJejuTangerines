@@ -1144,6 +1144,16 @@ body{
     }
 
 
+    body {
+        overflow: hidden;
+        touch-action: none;
+    }
+    body {
+        position: fixed;
+        overflow: hidden;
+        touch-action: none;
+    }
+
 
     /* 아이폰 세로 크기 재조정 */
     #intro{
