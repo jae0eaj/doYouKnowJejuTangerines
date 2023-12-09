@@ -26,7 +26,16 @@
     font-style: normal;
 }
 
-/* 가로스크롤 없애기 */
+
+.viewer {
+    width: 100vw;
+    /* max-width: 580px; */
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
 
 *{
     margin: 0px;
@@ -977,8 +986,8 @@ body{
 
     /* 웹용 상자 이미지 사라지게*/
     #innerCatonBoxForWeb{
-
     }
+
     /* 아이패드용 상자 이미지 나오게*/
     #innerCatonBoxForMob{
         /* display: block;
