@@ -61,42 +61,42 @@ function mobile(e) {
 
 
 
-/* 아이폰 화면 스크롤 X */
-funciton setScreenSize() {
-    let vh = window.innerHeight * 0.01;
+// /* 아이폰 화면 스크롤 X */
+// funciton setScreenSize() {
+//     let vh = window.innerHeight * 0.01;
   
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-}
+//     document.documentElement.style.setProperty('--vh', `${vh}px`);
+// }
   
-setScreenSize(); 
+// setScreenSize(); 
 
 
 
 
-height: calc(var(--vh, 1vh) * 100);
+// height: calc(var(--vh, 1vh) * 100);
 
 
-window.addEventListener('resize', () => setScreenSize());
+// window.addEventListener('resize', () => setScreenSize());
 
 
 
-disableScroll = () => {
-    document.querySelector('body').addEventListener('touchmove', this.removeEvent, { passive: false });
-    document.querySelector('body').addEventListener('onclick', this.removeEvent, { passive: false });
-    document.querySelector('body').addEventListener('mousewheel', this.removeEvent, { passive: false });
-  }
+// disableScroll = () => {
+//     document.querySelector('body').addEventListener('touchmove', this.removeEvent, { passive: false });
+//     document.querySelector('body').addEventListener('onclick', this.removeEvent, { passive: false });
+//     document.querySelector('body').addEventListener('mousewheel', this.removeEvent, { passive: false });
+//   }
 
-  removeEvent = e => {
-    e.preventDefault();
-    e.stopPropagation();
-  }
+//   removeEvent = e => {
+//     e.preventDefault();
+//     e.stopPropagation();
+//   }
 
-  enableScroll = () => {
-    document.querySelector('body').removeEventListener('touchmove', this.removeEvent);
-    document.querySelector('body').removeEventListener('onclick', this.removeEvent);
-    document.querySelector('body').removeEventListener('mousewheel', this.removeEvent);
-  }
+//   enableScroll = () => {
+//     document.querySelector('body').removeEventListener('touchmove', this.removeEvent);
+//     document.querySelector('body').removeEventListener('onclick', this.removeEvent);
+//     document.querySelector('body').removeEventListener('mousewheel', this.removeEvent);
+//   }
 
-/* 아이폰 화면 스크롤 X */
+// /* 아이폰 화면 스크롤 X */
 
 
