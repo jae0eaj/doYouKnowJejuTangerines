@@ -1115,14 +1115,7 @@ body{
 
 
 
-    /* :root {
-        --vh: 100%;
-    }
-     
-    html,body {
-         height: 100vh;
-         height: var(--vh);
-    } */
+
 
     #cover{
         height: 100%;
